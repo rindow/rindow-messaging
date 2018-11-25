@@ -1,0 +1,39 @@
+{
+    "name": "rindow/rindow-messaging",
+    "type": "library",
+    "description": "Support messaging",
+    "keywords": ["rindow","framework","messaging"],
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.3",
+        "interop-phpobjects/lenient-messaging": "*",
+        "rindow/rindow-stdlib": "*"
+    },
+    "require-dev": {
+        "rindow/rindow-stdlib": "*",
+        "rindow/rindow-transaction": "*"
+    },
+    "suggest": {
+        "rindow/rindow-transaction": "When using annotation",
+        "rindow/rindow-pdo": "When using SQL databases",
+        "rindow/rindow-module-stomp": "When using ActiveMQ etc."
+    },
+    "autoload": {
+        "psr-0": {
+            "Rindow\\Messaging\\": "src/"
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://rindow.github.io/rindow-packagist/packages.json",
+            "options": {
+                "ssl": {
+                    "verify_peer": "true"
+                }
+            }
+        }
+    ],
+    "minimum-stability": "dev"
+}
