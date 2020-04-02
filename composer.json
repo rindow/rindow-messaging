@@ -7,11 +7,11 @@
     "require": {
         "php": ">=5.3.3",
         "interop-phpobjects/lenient-messaging": "*",
-        "rindow/rindow-stdlib": "*"
+        "rindow/rindow-stdlib": "1.*"
     },
     "require-dev": {
-        "rindow/rindow-stdlib": "*",
-        "rindow/rindow-transaction": "*"
+        "rindow/rindow-stdlib": "1.*",
+        "rindow/rindow-transaction": "1.*"
     },
     "suggest": {
         "rindow/rindow-transaction": "When using annotation",
@@ -22,18 +22,5 @@
         "psr-0": {
             "Rindow\\Messaging\\": "src/"
         }
-    },
-
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://rindow.github.io/rindow-packagist/packages.json",
-            "options": {
-                "ssl": {
-                    "verify_peer": "true"
-                }
-            }
-        }
-    ],
-    "minimum-stability": "dev"
+    }
 }
